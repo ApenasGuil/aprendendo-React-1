@@ -49,3 +49,7 @@ Gerar ID aleatórias
 npm install react-router-dom@6.26.1
 Gerenciamento de rotas
 
+useEffect(() => {
+    console.log("Tasks foi alterado");
+  }, [tasks]);
+useEffect = Executa a primeira função, sempre que a lista do segundo parâmetro for alterada
