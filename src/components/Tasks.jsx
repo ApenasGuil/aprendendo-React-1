@@ -9,7 +9,7 @@ function Tasks({ tasks , onTaskClick , onDeleteTaskClick }) {
     query.set("title", task.title)
     query.set("description", task.description)
 
-    navigate(`/task?title=${query.toString()}`)
+    navigate(`/task?${query.toString()}`)
   }
   
   return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
-import {v4} from 'uuid'
+import { v4 } from "uuid";
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -36,12 +36,12 @@ function App() {
       return task;
     });
     setTasks(newTask);
-  };
+  }
 
-  function onDeleteTaskClick(taskId){
+  function onDeleteTaskClick(taskId) {
     const newTask = tasks.filter((task) => task.id !== taskId);
     setTasks(newTask);
-  };
+  }
 
   function onAddTaskSubmit(title, description) {
     const newTask = {
@@ -50,7 +50,7 @@ function App() {
       description,
       isCompleted: false,
     };
-    setTasks([...tasks, newTask])
+    setTasks([...tasks, newTask]);
   }
 
   return (
@@ -60,7 +60,11 @@ function App() {
           Gerenciador de Tarefas
         </h1>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
-        <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick} />
+        <Tasks
+          tasks={tasks}
+          onTaskClick={onTaskClick}
+          onDeleteTaskClick={onDeleteTaskClick}
+        />
       </div>
     </div>
   );
