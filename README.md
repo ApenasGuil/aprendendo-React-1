@@ -43,3 +43,9 @@ eles chamam esta função para atualizar o State
 
 {task.isCompleted ? "COMPLETE" : "INCOMPLETE"}
 
+npm install uuid@10.0.0
+Gerar ID aleatórias
+
+npm install react-router-dom@6.26.1
+Gerenciamento de rotas
+
