@@ -31,3 +31,15 @@ npm install -D tailwindcss@3.4.10 postcss@8.4.41 autoprefixer@10.4.20
 npx tailwindcss init -p
 
 content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
+npm install lucide-react@0.435.0
+Bibioteca de icones Lucide
+
+Quando você altera a variável, você precisa alterar a interface?
+Se sim, cria-se um State
+
+Criar função no componente Pai (App) e passar via props para os componentes filhos,
+eles chamam esta função para atualizar o State
+
+{task.isCompleted ? "COMPLETE" : "INCOMPLETE"}
+
