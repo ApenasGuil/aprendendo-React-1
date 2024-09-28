@@ -53,3 +53,11 @@ useEffect(() => {
     console.log("Tasks foi alterado");
   }, [tasks]);
 useEffect = Executa a primeira função, sempre que a lista do segundo parâmetro for alterada
+
+npm run build
+Prepara a aplicação para ir para produção
+dist/index.html
+
+assets => css compilado 
+
+vercel.com => deploy
