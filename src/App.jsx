@@ -21,14 +21,15 @@ function App() {
           method: "GET",
         }
       );
-      
+
       // PEGAR OS DADOS QUE ELA RETORNA
       const data = await response.json();
 
       // PERSISTIR ESSES DADOS NO STATE
       setTasks(data);
-    }
-    fetchTasks()
+    };
+    // SE QUISER, VOCÊ PODE CHAMAR UMA API PARA PEGAR AS TAREFAS
+    // fetchTasks();
   }, []);
 
   function onTaskClick(taskId) {
