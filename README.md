@@ -54,10 +54,12 @@ useEffect(() => {
   }, [tasks]);
 useEffect = Executa a primeira função, sempre que a lista do segundo parâmetro for alterada
 
+DEPLOY
 npm run build
 Prepara a aplicação para ir para produção
 dist/index.html
-
 assets => css compilado 
-
 vercel.com => deploy
+
+{task.isCompleted && <CheckIcon />}
+{task.isCompleted ? <CheckIcon /> : null }
