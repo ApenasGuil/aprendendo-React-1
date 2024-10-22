@@ -1,4 +1,34 @@
-How to react
+> How to react
+
+##### Estrutura 
+
+`./package.json`
+arquivos de dependencias do projeto
+
+`./index.html`
+vazio e o React insere o conteúdo através de JS
+(SPA - Single Page Application)
+
+`./src/main.jsx`
+inserção do ReactJS no index.html
+
+> componentes SEMPRE com primeira letra maiúscula
+
+`./src/App.jsx`
+componente pai de todo o projeto
+
+##### State
+
+State é uma variável, que quando é alterada, atualiza o componente e atualiza a tela, executando novamente a função
+
+```javascript
+const [message, setMessage] = useState("Valor inicial");
+```
+
+
+
+
+.
 
 Node + NPM instalados
 Node = Executar códigos JavaScript fora do navegador
